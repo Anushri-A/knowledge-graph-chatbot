@@ -1,3 +1,17 @@
+# Jupyter junk
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# RASA models (too big for GitHub)
+rasa_chatbolt/models/
+
+# Virtual environments
+venv/
+.venv/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
