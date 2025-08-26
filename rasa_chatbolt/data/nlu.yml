@@ -1,0 +1,45 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - catch you later
+
+- intent: ask_book_author
+  examples: |
+    - Who is the author of [The Alchemist](book)?
+    - Tell me who wrote [Atomic Habits](book)
+    - I want to know the author of [Ikigai](book)
+    - Who wrote [Harry Potter](book)?
+
+- intent: ask_book_price
+  examples: |
+    - What is the price of [The Alchemist](book)?
+    - How much does [Atomic Habits](book) cost?
+    - Tell me the price of [The Psychology of Money](book)
+    - How much is [Harry Potter](book)?
+
+- intent: ask_availability
+  examples: |
+    - Is [Ikigai](book) available?
+    - Can I buy [Deep Work](book)?
+    - Do you have [The Subtle Art of Not Giving a F*ck](book)?
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - What are you?
+    - Are you human?
+    - Are you real?
+

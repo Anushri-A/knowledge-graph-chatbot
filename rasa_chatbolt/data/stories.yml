@@ -1,0 +1,29 @@
+version: "3.1"
+
+stories:
+- story: greet and ask for author
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_book_author
+    - action: utter_respond_book_author
+
+- story: ask book price
+  steps:
+    - intent: ask_book_price
+    - action: utter_respond_book_price
+
+- story: check availability
+  steps:
+    - intent: ask_availability
+    - action: utter_respond_availability
+
+- story: say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: challenge the bot
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot

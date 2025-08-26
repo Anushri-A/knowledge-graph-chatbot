@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_book_author
+  - ask_book_price
+  - ask_availability
+  - goodbye
+  - bot_challenge
+
+entities:
+  - book
+
+slots:
+  book:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: book
+
+responses:
+  utter_greet:
+    - text: "Hey there! How can I help you with books today?"
+
+  utter_respond_book_price:
+    - text: "The price of the book is ₹499."
+
+  utter_respond_book_author:
+    - text: "The author of this book is J.K. Rowling."
+
+  utter_respond_availability:
+    - text: "Yes, the book is currently available."
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_iamabot:
+    - text: "I am a bot, here to help you with book information!"
+
+  utter_default:
+    - text: "Sorry, I didn't quite get that. Could you rephrase?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
